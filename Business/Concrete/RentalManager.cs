@@ -45,7 +45,7 @@ namespace Business.Concrete
 
         public IDataResult<Rental> GetById(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Rental>(_service.Get(p=>p.RentalId == id));
         }
     }
 }

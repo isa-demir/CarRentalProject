@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    internal interface IUserService
+    public interface IUserService
     {
         IResult AddUser(User user);
         IResult RemoveUser(User user);
